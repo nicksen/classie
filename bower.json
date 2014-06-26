@@ -1,0 +1,18 @@
+{
+  "name": "nicksen-classie",
+  "version": "0.0.1",
+  "authors": [
+    "Nicklas Moberg <nicklas@nicks.se>"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
