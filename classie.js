@@ -1,12 +1,15 @@
-(function (factory) {
-    "use strict";
-
-    if ("function" === typeof define && define.amd) {
-        define(factory);
-    } else if ("object" === exports) {
+(function(root, factory) {
+    if(typeof exports === 'object') {
         module.exports = factory();
     }
-})(function () {
+    else if(typeof define === 'function' && define.amd) {
+        define([], factory);
+    }
+    else {
+        root['classie'] = factory();
+    }
+}(this, function() {
+
     "use strict";
 
     function classReg(className) {
@@ -69,5 +72,7 @@
         toggle: toggleClass
     };
 
+
     return classie;
-});
+
+}));
